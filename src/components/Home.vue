@@ -73,7 +73,7 @@
         setInterval(() => {
           const date = new Date()
           this.date = date.getDate()
-          this.month = this.checkSingleDigit(date.getMonth())
+          this.month = this.checkSingleDigit(date.getMonth()+1)
           this.year = date.getFullYear()
           this.hours = date.getHours()
           this.minutes = this.checkSingleDigit(date.getMinutes())
